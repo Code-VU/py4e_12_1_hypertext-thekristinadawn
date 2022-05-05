@@ -1,7 +1,7 @@
 
 from random import randint
 from unittest.mock import Mock
-import firstattempt
+import socket1
 
 def test_calculateAbsolute_printsABS_lessThan21(capfd, monkeypatch):
     in_num = randint(-100, 21)
