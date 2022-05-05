@@ -7,7 +7,7 @@ def test_calculateAbsolute_printsABS_lessThan21(capfd, monkeypatch):
     in_num = randint(-100, 21)
     input = [in_num]
     monkeypatch.setattr('builtins.input', lambda _:input.pop())
-    firstattempt.getWebData()
+    socket1.getWebData()
 
     out, err = capfd.readouterr()
        
