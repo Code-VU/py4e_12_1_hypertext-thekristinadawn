@@ -1,13 +1,13 @@
 
 from random import randint
 from unittest.mock import Mock
-import socket1
+import firstattempt
 
 def test_calculateAbsolute_printsABS_lessThan21(capfd, monkeypatch):
     in_num = randint(-100, 21)
     input = [in_num]
     monkeypatch.setattr('builtins.input', lambda _:input.pop())
-    socket1.getWebData()
+    firstattempt.getWebData()
 
     out, err = capfd.readouterr()
        
